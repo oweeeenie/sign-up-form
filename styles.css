@@ -2,7 +2,7 @@
   --text-color: #ff8fab;
   --background-color: #ffc2d1;
   --background-color-quote: #ffb3c6;
-  --primary-color: #;
+  --form-font-size: 1.2rem;
   font-family: monospace;
 }
 
@@ -20,10 +20,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0;
   font-weight: normal;
   line-height: 1.5;
-}
-
-ol, ul {
-  list-style: none;
 }
 
 body {
@@ -104,21 +100,20 @@ body {
 
 .form-row {
   display: flex;
-  gap: 20px;
+  gap: 125px;
 }
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .form-item {
-  border: 1px solid black;
   box-sizing: border-box;
-  flex: 1;
   flex-direction: column;
   display: flex;
+  margin-bottom: 25px;
+  font-size: var(--form-font-size);
 }
 
 #create-account-container {
@@ -137,3 +132,17 @@ body {
   font-size: 1.5rem;
 }
 
+input {
+  padding: 8px;
+  width: 12vw;
+  border-radius: 7px;
+  border: 2px solid var(--text-color);
+}
+
+#submit_button {
+
+}
+
+label span {
+  color: red;
+}
