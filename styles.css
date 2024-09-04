@@ -88,8 +88,7 @@ body {
 }
 
 #form-container {
-  display: flex;
-  flex-direction: column;
+  position: relative; 
   width: 70vw;
   height: 33vh;
   margin-left: 30vw;
@@ -103,3 +102,29 @@ body {
   font-weight: bold;
 }
 
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#create-account-container {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 33vh;
+  margin-left: 30vw;
+  padding-left: 50px;
+  padding-top: 30px;
+  background-color: var(--background-color-quote)
+}
+
+#create-account-container p {
+  margin-top: 200px;
+  font-size: 1.5rem;
+}
