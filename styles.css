@@ -102,15 +102,23 @@ body {
   font-weight: bold;
 }
 
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
 .form-wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form-item {
   border: 1px solid black;
   box-sizing: border-box;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
 }
 
 #create-account-container {
@@ -128,3 +136,4 @@ body {
   margin-top: 200px;
   font-size: 1.5rem;
 }
+
