@@ -3,6 +3,7 @@
   --background-color: #ffc2d1;
   --background-color-quote: #ffb3c6;
   --form-font-size: 1.2rem;
+  --border-radius-preset: 7px;
   font-family: monospace;
 }
 
@@ -33,7 +34,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   border: 4px solid black;
 }
 
@@ -100,7 +100,7 @@ body {
 
 .form-row {
   display: flex;
-  gap: 125px;
+  gap: 225px;
 }
 
 .form-wrapper {
@@ -135,14 +135,58 @@ body {
 input {
   padding: 8px;
   width: 12vw;
-  border-radius: 7px;
-  border: 2px solid var(--text-color);
+  border-radius: var(--border-radius-preset);
+  border: 2px solid black;
+  background-color: transparent;
 }
 
 #submit_button {
-
+  margin-top: 120px;
+  padding: 15px;
+  width: 10vw;
+  border-radius: var(--border-radius-preset);
+  background-color: #ff4d6d; 
+  border: none;
+  box-shadow: 0 0 5px black;
+  font-size: var(--form-font-size);
+  font-weight: bolder;
 }
 
 label span {
   color: red;
+}
+
+input:focus {
+  border: 2px solid #ffafcc;
+  box-shadow: 0 0 5px #ffafcc;
+  outline: none;
+}
+
+input:invalid {
+  outline: none;
+  border: 2px solid red;
+}
+
+#credits {
+  position: absolute;
+  font-size: 1.5rem;
+  z-index: 10;
+  text-shadow: 0 0 5px black;
+  color: var(--text-color);
+  left: 200px;
+  bottom: 20px;
+}
+
+#name,
+#source {
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 20;
+}
+
+#log-in {
+  color: #ff4d6d;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 0 0 3px #ff4d6d;
 }
